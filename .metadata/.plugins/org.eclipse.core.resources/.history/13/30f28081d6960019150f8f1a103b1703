@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+
+public class RoomGenerator {
+	
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner scnr = new Scanner(System.in);
+		
+		float length;
+		float width;
+		float area;
+		float perimeter;
+		
+		System.out.println("Enter Length: ");
+		length = 
+		System.out.println("Enter Width: ");
+		
+		
+		
+				
+		
+		
+	}
+
+}
+
+

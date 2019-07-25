@@ -1,0 +1,33 @@
+1. SELECT * FROM customers;
+2. SELECT DISTINCT countries from Customers;
+3. SELECT * from Customers where CustomerID like 'BL%';
+4. SELECT * FROM orders LIMIT 100;
+5. SELECT * FROM customers where PostalCode IN (1010,3012, 12209, 05023);
+6. SELECT * from orders where ShipRegion IS NOT NULL;
+7. SELECT * from customers order by Country, City;
+8. INSERT INTO customers (CustomerID, CompanyName, ContactName, ContactTitle, Address, 	City, Country, Fax, Image, ImageThumbnail, Phone, PostalCode, Region) VALUES 	('XXXXX', 'Grand Circus', 'Jane Doe', 'Teacher', '1570 Woodward', 'Detroit', ' 	', '48226', 'USA', '313-555-0000', '313-555-1000', ' ', ' ');
+9. UPDATE orders SET ShipRegion='EuroZone' where ShipCountry = 'France';
+10. DELETE FROM northwind.`order details` where quantity = '1';
+11. SELECT avg(quantity) from `order details`;
+11. SELECT max(quantity) from `order details`;
+11. SELECT min(quantity) from `order details`;
+12. SELECT avg(quantity) from `order details` group by orderid;
+12. SELECT max(quantity) from `order details` group by orderid;
+12. SELECT min(quantity) from `order details` group by orderid;
+13. SELECT CustomerID from orders where OrderID = 10290;
+14. select * from orders INNER JOIN customers on Orders.CustomerID =     customers.CustomerID;
+14. select * from orders LEFT JOIN customers on Orders.CustomerID =     customers.CustomerID;
+14. SELECT * from orders RIGHT JOIN customers on Orders.CustomerID =     customers.CustomerID;
+15. SELECT FirstName from employees where ReportsTo is null;
+16. SELECT FirstName from employees where ReportsTo = 'Andrew';
+
+CREATE TABLE Student (
+   StudentID INT NOT NULL AUTO_INCREMENT,
+   Name VARCHAR(25) NOT NULL,
+   Age INT NOT NULL, 
+   PRIMARY KEY (StudentID) );
+
+CREATE TABLE Class (
+   ClassID INT NOT NULL AUTO_INCREMENT,
+   ClassName VARCHAR(25) NOT NULL,
+   PRIMARY KEY (ClassID) );
